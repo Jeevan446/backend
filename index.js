@@ -7,7 +7,9 @@ app.use(express.json());
 
 
 app.use(cookieParser());
-
+app.get("/",(req,res)=>{
+    return res.send("HHHHHHHH");
+})
 app.get("/data",(req,res)=>{
     return res.send("Hello from backend server")
 })
